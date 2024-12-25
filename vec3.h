@@ -44,14 +44,11 @@ class vec3 {
     double length_squared() const {
         return e[0]*e[0] + e[1]*e[1] + e[2]*e[2];
     }
-
-    inline void print_(std::ostream& st) {
-        st << e[0] << " " << e[1] << " " << e[2] << std::endl;
-    }
 };
 
 // point3 is just an alias for vec3, but useful for geometric clarity in the code.
 using point3 = vec3;
+
 
 // Vector Utility Functions
 
